@@ -1,0 +1,92 @@
+* {
+  font-family: "Lato", sans-serif;
+}
+.container {
+  width: 70%;
+  margin: 3em auto;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  background: #b8bfc4;
+  padding: 3em;
+  border-radius: 2em;
+}
+
+.box {
+  padding: 1em;
+  width: 15%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: #0080ce;
+  border-radius: 2em;
+}
+
+.number {
+  color: white;
+  margin: 20px 0;
+  font-size: 3em;
+  font-weight: bold;
+}
+
+.title {
+  color: white;
+  font-size: 1.2em;
+}
+
+.formulario {
+  display: flex;
+  flex-direction: column;
+  margin-top: 3em;
+}
+
+.btnButton {
+  font-size: 1.2em;
+  padding: 0.5em;
+  border: rgba(0, 0, 0, 0) solid 1px; /*Truco, para mantener el border*/
+  border-radius: 0.5em;
+  background: #0080ce;
+  color: #fff;
+  transition: 0.4s;
+}
+
+.btnButton:hover {
+  color: #a4d3f0;
+  background: #fff;
+  border: #0080ce solid 1px;
+}
+
+.caja {
+  margin: 20px auto 40px auto;
+  border: 1px solid #d9d9d9;
+  height: 30px;
+  overflow: hidden;
+  width: 230px;
+  position: relative;
+}
+
+select {
+  background: transparent;
+  border: none;
+  font-size: 14px;
+  height: 30px;
+  padding: 5px;
+  width: 250px;
+}
+select:focus {
+  outline: none;
+}
+
+.caja::after {
+  content: "\025be";
+  display: table-cell;
+  padding-top: 7px;
+  text-align: center;
+  width: 30px;
+  height: 30px;
+  background-color: #d9d9d9;
+  position: absolute;
+  top: 0;
+  right: 0px;
+  pointer-events: none;
+}
