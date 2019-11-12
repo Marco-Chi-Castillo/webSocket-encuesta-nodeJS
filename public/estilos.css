@@ -90,3 +90,38 @@ select:focus {
   right: 0px;
   pointer-events: none;
 }
+
+.contenedor{
+  margin: auto;
+  display: table;
+}
+
+h3{
+  float: left;
+  font-size: 40px;
+  font-family: Fredoka one;
+  color: #0080ce;
+  position: relative;
+}
+
+h3 span{
+  position: absolute;
+  right: 0;
+  width: 0;
+  background-color: #fff;
+  border-left: 1px solid #0000;
+  animation: maquina 5s infinite alternate steps(36);
+}
+
+@keyframes maquina{
+  from{
+    width: 100%;
+  }
+  to{
+    width: 0;
+  }
+}
+
+p{
+  font-family: Fredoka one;
+}
