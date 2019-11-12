@@ -3,7 +3,7 @@
 }
 .container {
   width: 70%;
-  margin: 3em auto;
+  margin: 1em auto;
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
@@ -91,12 +91,12 @@ select:focus {
   pointer-events: none;
 }
 
-.contenedor{
+.contenedor {
   margin: auto;
   display: table;
 }
 
-h3{
+h3 {
   float: left;
   font-size: 40px;
   font-family: Fredoka one;
@@ -104,24 +104,20 @@ h3{
   position: relative;
 }
 
-h3 span{
+h3 span {
   position: absolute;
   right: 0;
   width: 0;
   background-color: #fff;
   border-left: 1px solid #0000;
-  animation: maquina 5s infinite alternate steps(36);
+  animation: maquina 5s alternate steps(36);
 }
 
-@keyframes maquina{
-  from{
+@keyframes maquina {
+  from {
     width: 100%;
   }
-  to{
+  to {
     width: 0;
   }
-}
-
-p{
-  font-family: Fredoka one;
 }
