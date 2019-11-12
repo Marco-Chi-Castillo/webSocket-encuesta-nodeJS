@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <script src="/socket.io/socket.io.js"></script>
+  <script src="main.js"></script>
+  <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="estilos.css">
+  <title>Encuesta WebSocket</title>
+</head>
+
+<body>
+  <div class="container">
+    <div class="box">
+      <p id="1" class="number">0</p>
+      <p class="title">Java</p>
+    </div>
+    <div class="box">
+      <p id="2" class="number">0</p>
+      <p class="title">Javascript</p>
+    </div>
+    <div class="box">
+      <p id="3" class="number">0</p>
+      <p class="title">c++</p>
+    </div>
+    <div class="box">
+      <p id="4" class="number">0</p>
+      <p class="title">phyton</p>
+    </div>
+    <div class="box">
+      <p id="5" class="number">0</p>
+      <p class="title">php</p>
+    </div>
+
+    <form action="" onsubmit=" return addMessage(this)" class="formulario" id="form">
+      <div class="caja">
+        <select id="lenguajes" class="lenguajes-estilo">
+          <option selected="true" disabled="disabled">Seleccione Una Opción</option>
+          <option value="1">java</option>
+          <option value="2">javascript</option>
+          <option value="3">c++</option>
+          <option value="4">phyton</option>
+          <option value="5">php</option>
+        </select>
+      </div>
+      <input id="boton" type="submit" value="Votar" class="btnButton" />
+    </form>
+  </div>
+
+
+
+
+
+
+</body>
+
+</html>
