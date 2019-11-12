@@ -16,7 +16,6 @@ app.get('/hello', function (req, res) {
 io.on('connection', function (socket) {
   console.log('Alguien se ha conectado con Sockets');
   socket.emit('messages', messages);
-
   socket.on('new-message', function (data) {
     messages.push(data);
 

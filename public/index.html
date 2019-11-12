@@ -55,8 +55,23 @@
         </select>
       </div>
       <input id="boton" type="submit" value="Votar" class="btnButton" />
+      <input id="botonYavoto" type="button" value="Listo" class="yavoto" />
+
     </form>
   </div>
+
+  <script>
+    let boton = document.getElementById("boton");
+    let boton2 = document.getElementById("botonYavoto");
+    let select = document.getElementById("lenguajes");
+
+    boton.addEventListener("click", function (evento) {
+      if (select.value > 0) {
+        boton.style.display = "none";
+        boton2.style.display = "block";
+      }
+    });
+  </script>
 </body>
 
 </html>

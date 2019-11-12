@@ -56,6 +56,20 @@
   border: #0080ce solid 1px;
 }
 
+
+.yavoto {
+  font-size: 1.2em;
+  padding: 0.5em;
+  border: rgba(0, 0, 0, 0) solid 1px; /*Truco, para mantener el border*/
+  border-radius: 0.5em;
+  background: #df0b0b;
+  color: #fff;
+  transition: 0.4s;
+  display: none;
+}
+
+
+
 .caja {
   margin: 20px auto 40px auto;
   border: 1px solid #d9d9d9;
